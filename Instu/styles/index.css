@@ -1,0 +1,41 @@
+.navbar-inverse {
+    background-color: #9B111E;
+    border-color: #9B111E;
+}
+
+.boxed {
+  border: 1px solid grey ;
+  
+  margin-left:50px;
+  margin-right: 50px;
+  margin-top:0;
+  margin-bottom: 20px;
+}
+
+input{
+	border-color: #fff;
+	background-color: #fff;
+	border: none;
+border-color: transparent;
+}
+
+.data_title{
+	width: 800px;
+	font-size: 50px;
+
+}
+
+.data_id{
+	width:20px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color:#fff;
+}
+
+* {
+  border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+}

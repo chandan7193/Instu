@@ -1,0 +1,23 @@
+
+<div class="boxed" ng-repeat = "data in myData">
+ <div class="container" >
+	<div class="row" >
+		<div class="col-xs-2 col-xs-offset-2">
+			<img src="{{data.thumbnailUrl}}" height="40" width="40"/>
+		</div>
+		<div class="col-xs-6"  >
+			<b>Do More - </b> <input type="text" class="data_id" disabled="disabled" ng-model="data.id"></input> created todo.
+		</div>
+	</div>
+	<div class="row title">
+		<div class="col-xs-8 col-xs-offset-2">
+			<input type = "text" class="data_title" disabled="disabled" ng-model="data.title"></input>
+		</div>
+	</div>
+	<div class="row desc">
+		<div class="col-xs-8 col-xs-offset-2">
+			<img src="{{data.thumbnailUrl}}" height="300" width="300"/>
+		</div>
+	</div>
+</div> 
+</div>
