@@ -1,0 +1,36 @@
+
+<div class="boxed" ng-repeat = "data in myData">
+	
+	<div class="container" >
+		<div class="row" >
+			<div class="col-xs-1">
+				<img class="img img-responsive img-circle" src="{{data.smallpicture}}" height="40" width="40"/>
+			</div>
+			<div class="col-xs-6">
+				<b><input type="text" class="data_Username" disabled="disabled" ng-model ="data.userName"></input></b><br>
+				<input type="text" class="data_Company" disabled="disabled" ng-model ="data.company"></input>
+			</div>
+		</div>
+		
+		<div class="row desc">
+			<div class="display-image">
+				<img class="img img-responsive large-picture"src="{{data.largepicture}}" />
+			</div>
+		</div>
+		<div class="likes_details">
+			<label class="likes">{{data.likes}} likes</label>
+		</div>
+		<div class="tags_about">
+			<div class="row">
+				<div class="col-xs-1">
+					<label class="likes">{{data.userName}} </label>
+				</div>
+				<div class="col-xs-5">
+					<label class="tags">#{{data.tags[0]}}, #{{data.tags[1]}}, #{{data.tags[2]}}, #{{data.tags[3]}}, #{{data.tags[4]}}</label>
+					<label class="about">{{data.about}}</label>
+				</div>
+			</div>
+		</div>
+		
+	</div> 
+</div>

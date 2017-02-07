@@ -1,0 +1,66 @@
+<!-- index.html -->
+    <!DOCTYPE html>
+
+    <!-- define angular app -->
+    <html ng-app="myApp">
+    <head>
+      <!-- SCROLLS -->
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <meta charset="UTF-8">
+<!-- Included Bootstrap -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- Included JQuery -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Included Bootstrap JQuery -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- External CSS -->
+  <link rel="stylesheet" type="text/css" href="styles/index.css">
+
+      <!-- SPELLS -->
+      <!-- load angular via CDN -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+      <script src="controllers/script.js"></script>
+      <script src="data.js"></script>
+      <title>Instu</title>
+    </head>
+
+    <!-- define angular controller -->
+    <body ng-controller="mainController">
+       <nav class="navbar navbar-inverse no-margin" >
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <a href = "#"><img src="./assets/do.jpg" style="width:30px ; height:30px;  filter: grayscale(100%); margin-top:17px;"></a>
+                    </div>
+                    
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                        
+                        
+
+                        <li><a href="#search"> Search</a></li>
+                        <li><a href="#message"> Message</a></li>
+                        <li><a href="#alert"> Alert</a></li>
+                        <li><a href="#profile"> Profile</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+   
+
+    <!-- MAIN CONTENT AND INJECTED VIEWS -->
+    <div id="main">
+        <div ng-view></div>
+
+        <!-- angular templating -->
+        <!-- this is where content will be injected -->
+    </div>
+
+
